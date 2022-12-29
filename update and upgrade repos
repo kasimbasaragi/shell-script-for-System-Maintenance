@@ -1,0 +1,11 @@
+#!/bin/bash
+
+echo -e "\n$(date "+%d-%m-%Y --- %T") --- Starting work\n"
+
+yum update
+yum -y upgrade
+
+yum -y autoremove
+yum autoclean
+
+echo -e "\n$(date "+%T") \t Script Terminated"
